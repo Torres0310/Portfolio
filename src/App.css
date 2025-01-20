@@ -1,0 +1,77 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0b0e27; 
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.portfolio {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b0d4f1; 
+  text-shadow: 0 0 10px #4a90e2, 0 0 20px #4a90e2;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #8fa0c9;
+}
+
+.profile {
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(241, 196, 15, 0.6);
+}
+
+.about, .projects {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about h2, .projects h2 {
+  font-size: 1.8rem;
+  color: #f1c40f;
+  text-shadow: 0 0 5px #f39c12;
+}
+
+.project-card {
+  margin: 15px 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #e1e3f5;
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+footer {
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+footer .glow {
+  text-shadow: 0 0 5px #f39c12, 0 0 15px #f39c12;
+}
