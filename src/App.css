@@ -1,4 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+/* Navigation Bar */
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(11, 14, 39, 0.9);
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+  transition: background 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  height: 60px; 
+  line-height: 60px; 
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: #fbc02d;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(251, 192, 45, 0.8);
+}
+
+.hero {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.hero-content {
+  margin-top: 80px; 
+}
+
 body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
@@ -15,10 +73,148 @@ body {
 
 .container {
   max-width: 1200px;
-  width: 100%;
-  padding: 40px 20px;
+  width: 90%;
+  padding: 60px 40px;
+  margin: 50px auto;
   text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
+
+.container > * {
+  margin-bottom: 30px;
+}
+
+.container > *:last-child {
+  margin-bottom: 0;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* General Styling for Sections */
+.entered-contest, .tasks, .current-work, .career-goals, .personal-touch, .call-to-action {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.entered-contest:hover, .tasks:hover, .current-work:hover, .career-goals:hover, .personal-touch:hover, .call-to-action:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.entered-contest h2, .tasks h2, .current-work h2, .career-goals h2, .personal-touch h2, .call-to-action h2 {
+  font-size: 2rem;
+  color: #f1c40f;
+  text-shadow: 0 0 10px #f39c12;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.entered-contest h2::after, .tasks h2::after, .current-work h2::after, .career-goals h2::after, .personal-touch h2::after, .call-to-action h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #f1c40f;
+  transition: width 0.3s ease;
+}
+
+.entered-contest:hover h2::after, .tasks:hover h2::after, .current-work:hover h2::after, .career-goals:hover h2::after, .personal-touch:hover h2::after, .call-to-action:hover h2::after {
+  width: 100%;
+}
+
+.tasks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tasks li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #f1c40f;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #f39c12;
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  padding: 60px 40px; /* Increased padding for more space inside */
+  margin: 50px auto; /* Added more margin to separate it from other elements */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Add more spacing between elements inside */
+.container > * {
+  margin-bottom: 30px; /* Space between items inside the container */
+}
+
+/* Prevent last child from having extra margin */
+.container > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Hover Effect */
+.container:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 50px 30px;
+    margin: 40px auto; /* Maintain spacing on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 30px 20px;
+    margin: 30px auto;
+  }
+}
+
+
 
 
 .tasks {
@@ -54,7 +250,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  margin-top: 40px;
 }
+
 
 .task-card {
   background: rgba(255, 255, 255, 0.05);
@@ -319,7 +517,6 @@ footer:hover .glow {
   }
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .name {
     font-size: 2.5rem;
