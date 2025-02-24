@@ -49,10 +49,7 @@ function App() {
         <section id="contest" className="entered-contest">
           <div className="container">
             <h2>Entered Contest</h2>
-            <p>
-              Participated in multiple software testing hackathons, where I successfully identified critical bugs and 
-              improved software efficiency. Recently, I entered the <strong>2023 Bug Bounty Challenge</strong> and secured 
-              the <strong>Top Tester Award</strong>.
+            <p>None so far.
             </p>
           </div>
         </section>
